@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="MAPD724_W2022_MIdterm_301222885" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HO-v2-hEO">
+                                <rect key="frame" x="563" y="30" width="178" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0jo-J5-WsY"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="ScoreLabel: 99999">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Dock51"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ion-Ff-zLw">
+                                <rect key="frame" x="234" y="125" width="358" height="108"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="GAME OVER">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="60" name="Dock51"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJn-q8-CsG">
+                                <rect key="frame" x="33" y="57" width="724" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="wCm-3P-dMY"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Mail Pilot">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="60" name="Dock51"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFs-K5-yQW">
+                                <rect key="frame" x="93" y="31" width="134" height="45"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="LivesLabel: 99">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Dock51"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4H-Ju-r1M">
+                                <rect key="frame" x="301" y="295" width="224" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="HuT-Tm-iMb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="restartButton"/>
+                                <connections>
+                                    <action selector="EndButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="56T-Iw-mVO"/>
+                                    <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Ch2-CL-B9g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAK-OL-ggr">
+                                <rect key="frame" x="287.00000000000023" y="-226.70335820895536" width="237.99999999999991" height="845"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="845" id="pmP-3X-xND"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="startButton"/>
+                                <connections>
+                                    <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="P7u-U1-LLP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="6HO-v2-hEO" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="30" id="3XA-vR-3iU"/>
+                            <constraint firstItem="GFs-K5-yQW" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="31" id="8yx-9Z-PJM"/>
+                            <constraint firstItem="Ion-Ff-zLw" firstAttribute="centerX" secondItem="F4H-Ju-r1M" secondAttribute="centerX" id="ATU-hw-pAg"/>
+                            <constraint firstItem="ZJn-q8-CsG" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-27" id="D5t-VS-w1S"/>
+                            <constraint firstItem="F4H-Ju-r1M" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="257" id="Px1-tX-LYa"/>
+                            <constraint firstItem="GFs-K5-yQW" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="49" id="Qq8-Kn-Puy"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="ZJn-q8-CsG" secondAttribute="trailing" constant="43" id="TGM-l7-BMW"/>
+                            <constraint firstItem="cAK-OL-ggr" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="WLV-Qn-9Gu"/>
+                            <constraint firstItem="F4H-Ju-r1M" firstAttribute="bottom" secondItem="4qk-I5-YsI" secondAttribute="bottom" id="Z2S-um-E5v"/>
+                            <constraint firstItem="6HO-v2-hEO" firstAttribute="leading" secondItem="cAK-OL-ggr" secondAttribute="trailing" constant="37.999999999999886" id="eXB-yY-PGH"/>
+                            <constraint firstItem="ZJn-q8-CsG" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="57" id="geI-nW-O7p"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="6HO-v2-hEO" secondAttribute="trailing" constant="59" id="hAY-3y-KF8"/>
+                            <constraint firstItem="cAK-OL-ggr" firstAttribute="leading" secondItem="GFs-K5-yQW" secondAttribute="trailing" constant="60.000000000000227" id="hfy-Ys-92A"/>
+                            <constraint firstItem="Ion-Ff-zLw" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="190" id="mmO-zt-2vL"/>
+                            <constraint firstItem="F4H-Ju-r1M" firstAttribute="top" secondItem="Ion-Ff-zLw" secondAttribute="bottom" constant="62" id="nI3-PL-5Zp"/>
+                            <constraint firstItem="Ion-Ff-zLw" firstAttribute="top" secondItem="6HO-v2-hEO" secondAttribute="bottom" constant="50" id="oWb-vD-Mk9"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="GFs-K5-yQW" secondAttribute="bottom" constant="293" id="sC9-Oz-iwv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EndButton" destination="F4H-Ju-r1M" id="lY9-Vt-om6"/>
+                        <outlet property="EndLabel" destination="Ion-Ff-zLw" id="ji0-S0-flf"/>
+                        <outlet property="LivesLabel" destination="GFs-K5-yQW" id="Wu4-eF-SnH"/>
+                        <outlet property="ScoreLabel" destination="6HO-v2-hEO" id="E6R-Yr-FGY"/>
+                        <outlet property="StartButton" destination="cAK-OL-ggr" id="6pI-J8-pfp"/>
+                        <outlet property="StartLabel" destination="ZJn-q8-CsG" id="shn-Np-iYA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="-146"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="restartButton" width="200" height="60"/>
+        <image name="startButton" width="200" height="60"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
